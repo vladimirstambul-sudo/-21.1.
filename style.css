@@ -1,6 +1,10 @@
 body{background-color: rgb(128, 128, 128);}
 
-.tabs{color: rgb(55, 255, 0);}
+.tabs {color: rgb(55, 255, 0);
+    text-decoration: none;
+    margin-right: 15px;}
+
+.tabs:hover { text-decoration: underline;}
 
 *{ font-family: Arial;}
 
@@ -8,7 +12,8 @@ h1 {font-size: 36px;
     text-align: center;
     color: rgb(37, 202, 147);}
 
-.text {font-size: 18px;
+.text {font-style: italic;
+    font-size: 18px;
     text-align: right;
     margin-right: 80px;
     font-weight: bold;
@@ -24,7 +29,63 @@ p {font-size: 20px;
 img { border-radius: 10px;
     box-shadow: 0 4px 8px rgba(154, 10, 10, 0.2);}
 
-    
+nav { display: flex;
+    justify-content: space-between; 
+    align-items: center;}
+
+.left { display: flex;
+    gap: 15px;}
+
+ nav {display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+.left {display: flex;
+    gap: 15px;}
+
+
+.btn {background-color: #4cec8f;
+    color: rgb(128, 128, 128);
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;}
+
+.btn:hover { background-color: #0fa3a3;}
+
+.form-container {display: flex;
+            justify-content: center;  
+            align-items: center;      
+            height: 100vh}
+            label {color: #18bebe;}
+
+input {background-color:rgb(198, 198, 188);
+        color: #18bebe;
+        border: 2px solid #174027;}
+
+input::placeholder { color: #18bebe;}
+
+.btn.active {pointer-events: none;
+            opacity: 0.6;
+            background-color: rgb(224, 224, 192);}
+
+ .text-box {max-width: 600px;
+            border: 2px solid #18bebe;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px auto; 
+             width: 60%;          
+            color: #18bebe;
+             background: rgba(0, 0, 0, 0.4);
+             box-shadow: 0 5px 15px rgba(0,0,0,0.5);}
+
+.container { display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 40px;}
+
+
 
 
 
